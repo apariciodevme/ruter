@@ -12,9 +12,9 @@
 
 
 @theme  {
-  --color-primary: #2e2f36;
+  --color-primary: #202126;
   --color-secondary: #2E2F36;
-  --color-foreground: var(--foreground);
+  --color-button: #79A0F0;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
