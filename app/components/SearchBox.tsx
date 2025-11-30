@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaDotCircle } from 'react-icons/fa'
-import { FaArrowRightLong, FaLocationDot, FaRegCircle } from 'react-icons/fa6'
-import { HiLocationMarker } from 'react-icons/hi'
+import { FaArrowRightLong, FaLocationDot } from 'react-icons/fa6'
 
 
 const SearchBox = () => {
