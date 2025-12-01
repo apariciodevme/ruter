@@ -20,10 +20,11 @@ export default function Home() {
   <CardInverted text="The work on the metro continues" title="Stortinget station is closed until December 2nd" img="/3.jpg" btnText="More information"/>
 
 
-  <CardInverted text="New rules from July 1st" title="Free public transport for asylum seekers" img="/3.jpg" btnText="More information"/>
+  <CardInverted text="New rules from July 1st" title="Free public transport for asylum seekers" img="/4.jpg" btnText="More information"/>
 
 
-  <CardInverted text="Winter is right around the corner" title="We have made these improvements" img="/3.jpg" btnText="More information"/>
+  <CardInverted text="Winter is right around the corner" title="We have made these improvements" img="/5.jpg" btnText="More information"/>
+
 
 
   

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { myFont } from "./fonts";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${myFont.variable} ${myFont.className}`}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
