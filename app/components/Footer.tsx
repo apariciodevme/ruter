@@ -37,12 +37,14 @@ const Footer = () => {
           alt="app-store"
           width={130}
           height={100}
+          className='cursor-pointer'
         />
         <Image
           src="/GooglePlay.png"
           alt="google-play"
           width={130}
           height={100}
+          className='cursor-pointer'
         />
       </div>
 

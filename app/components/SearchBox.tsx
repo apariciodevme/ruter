@@ -6,15 +6,15 @@ import { FaArrowRightLong, FaLocationDot } from 'react-icons/fa6'
 const SearchBox = () => {
   return (
     <div className='bg-secondary w-full p-5 pt-10 rounded-b-2xl'>
-      <h1 className='text-gray-400 text-3xl'>Good afternoon,
+      <h1 className='text-gray-400 font-extralight leading-10 text-3xl'>Good afternoon,
         <br />
 
-        <span className='text-white text-4xl font-semibold'>
+        <span className='text-white text-3xl font-semibold'>
 
           where to?
         </span>
 
-        
+
 
       </h1>
 
@@ -30,7 +30,7 @@ const SearchBox = () => {
         </div>
         <div className='relative'>
           <FaLocationDot className='absolute left-4 top-1/2 transform -translate-y-1/2 text-red-600' size={20} />
-          <input 
+          <input
             type="text"
             id="to"
             placeholder="To"
@@ -39,25 +39,25 @@ const SearchBox = () => {
         </div>
       </div>
 
-{/*Search Button*/}
+      {/*Search Button*/}
 
       <button className='px-4 mt-5 py-3 text-md font-medium  cursor-pointer bg-button rounded-3xl text-primary'>Search</button>
 
       <div className='flex mt-16 items-center gap-3'>
         <div className='flex items-center font-semibold cursor-pointer gap-2 rounded-3xl bg-primary px-5 text-button py-2'>
-        <FaArrowRightLong />
-        <h2 className='text-sm'>See departures</h2>
+          <FaArrowRightLong />
+          <h2 className='text-sm'>See departures</h2>
 
         </div>
         <div className='flex items-center cursor-pointer font-semibold gap-2 rounded-3xl bg-primary px-5 text-button py-2'>
-        <FaArrowRightLong />
-        <h2 className='text-sm'>Traffic status</h2>
+          <FaArrowRightLong />
+          <h2 className='text-sm'>Traffic status</h2>
 
         </div>
-        
-        
-        
-        
+
+
+
+
       </div>
     </div>
   )
