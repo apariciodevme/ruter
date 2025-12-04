@@ -5,20 +5,24 @@ import { FaArrowRightLong, FaLocationDot } from 'react-icons/fa6'
 
 const SearchBox = () => {
   return (
-    <div className='bg-secondary w-full p-5 pt-10 rounded-b-2xl'>
-      <h1 className='text-gray-400 font-extralight leading-10 text-3xl'>Good afternoon,
-        <br />
+    <div className='bg-secondary flex flex-col      w-full p-5 pt-10 rounded-b-2xl'>
 
-        <span className='text-white text-3xl font-semibold'>
+      {/*container automatic*/}
+      <div className='md:mx-auto md:w-auto'>
+        <h1 className='text-gray-400 font-extralight leading-10 text-3xl'>Good afternoon,
+          <br />
 
-          where to?
-        </span>
+          <span className='text-white text-3xl font-semibold'>
+
+            where to?
+          </span>
 
 
 
-      </h1>
+        </h1>
 
-      <div className='flex flex-col gap-4 my-6'>
+
+        <div className='flex  flex-col md:flex-row md:items-center  gap-4 my-6'>
         <div className='relative'>
           <FaDotCircle className='absolute left-4 top-1/2 transform -translate-y-1/2 text-red-600' size={18} />
           <input
@@ -37,11 +41,12 @@ const SearchBox = () => {
             className='w-full p-4 pl-12 rounded-2xl bg-primary focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white text-lg'
           />
         </div>
+
+        {/*Search Button*/}
+        <button className='px-4 mt-5 md:mt-0 py-3 text-md font-medium  cursor-pointer bg-button rounded-3xl text-primary'>Search</button>
       </div>
 
-      {/*Search Button*/}
 
-      <button className='px-4 mt-5 py-3 text-md font-medium  cursor-pointer bg-button rounded-3xl text-primary'>Search</button>
 
       <div className='flex mt-16 items-center gap-3'>
         <div className='flex items-center font-semibold cursor-pointer gap-2 rounded-3xl bg-primary px-5 text-button py-2'>
@@ -59,6 +64,11 @@ const SearchBox = () => {
 
 
       </div>
+
+
+      </div>
+
+     
     </div>
   )
 }
