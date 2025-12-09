@@ -39,17 +39,26 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between  h-18 p-5 bg-secondary relative z-50">
-        <h1 className='text-2xl font-semibold'>
+      <div className="flex items-center justify-between lg:p-10   p-5 bg-secondary relative z-50">
+        <h1 className='text-2xl lg:text-3xl font-semibold'>
           Ruter#
         </h1>
+
+
+        <div className='lg:flex gap-5 justify-between text-xl items-center hidden'>
+          <Link className='flex gap-2 items-center' href={'/'}> <BiSearch />Travel planner</Link>
+          <Link className='flex gap-2 items-center' href={'/'}> <BiWorld />Traffic status</Link>
+          <Link className='flex gap-2 items-center' href={'/'}> <FaUserCircle />Log in</Link>
+        </div>
+
+
 
         <button
           onClick={toggleMenu}
           className='px-4 flex cursor-pointer items-center gap-2 py-1.5 bg-button/20 text-[#86AFFF] rounded-full bg text-xl hover:bg-button/30 transition duration-200'
         >
           {isMenuOpen ? <h1>Close</h1> : <h1>Menu</h1>}
-           {isMenuOpen ? <IoClose className='w-6 h-6' /> : <IoMenu className='w-5 h-5' />}
+          {isMenuOpen ? <IoClose className='w-6 h-6' /> : <IoMenu className='w-5 h-5' />}
         </button>
       </div>
 
@@ -97,10 +106,10 @@ const Header = () => {
             <section>
 
               <div>
-              <h2 className='text-2xl border-b-[0.6px] border-neutral-500 font-medium mt-6 text-white p-4'>Settings</h2>
-              <SideNavItems text='Norsk ' icon={TbWorld} />
-              <SideNavItems text='Cookies ' icon={IoSettings} />
-              <SideNavItems text='Dark mode ' icon={IoMoon} />
+                <h2 className='text-2xl border-b-[0.6px] border-neutral-500 font-medium mt-6 text-white p-4'>Settings</h2>
+                <SideNavItems text='Norsk ' icon={TbWorld} />
+                <SideNavItems text='Cookies ' icon={IoSettings} />
+                <SideNavItems text='Dark mode ' icon={IoMoon} />
 
               </div>
 
